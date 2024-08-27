@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #74ebd5, #9face6);
+}
+
+.container {
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.search-container {
+    margin-top: 1em;
+}
+
+#location-input {
+    padding: 0.5em;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+}
+
+#search-button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    background: #74ebd5;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#search-button:hover {
+    background: #9face6;
+}
+
+.frequent-cities {
+    margin-top: 2em;
+}
+
+.frequent-cities table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.frequent-cities th, .frequent-cities td {
+    border: 1px solid #ddd;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.frequent-cities th {
+    background: #74ebd5;
+    color: white;
+}
+
+.weather-info {
+    margin-top: 2em;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.weather-info p {
+    margin: 0.5em 0;
+}

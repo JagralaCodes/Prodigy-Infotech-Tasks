@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather App</h1>
+        </header>
+        <div class="search-container">
+            <input type="text" id="location-input" placeholder="Enter a location">
+            <button id="search-button">Search</button>
+        </div>
+      <div id="weather-info" class="weather-info">
+            <p class="location"></p>
+            <p class="temperature"></p>
+            <p class="condition"></p>
+        </div>
+        <div class="frequent-cities">
+            <h2>Frequently Searched Cities</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>City</th>
+                        <th>Temperature</th>
+                        <th>Condition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-city="Ahmedabad">
+                        <td>Ahmedabad</td>
+                        <td class="ahmedabad-temp">--°C</td>
+                        <td class="ahmedabad-condition">--</td>
+                    </tr>
+                    <tr data-city="California">
+                        <td>California</td>
+                        <td class="california-temp">--°C</td>
+                        <td class="california-condition">--</td>
+                    </tr>
+                    <tr data-city="Delhi">
+                        <td>Delhi</td>
+                        <td class="delhi-temp">--°C</td>
+                        <td class="delhi-condition">--</td>
+                    </tr>
+                    <tr data-city="Kolkata">
+                        <td>Kolkata</td>
+                        <td class="kolkata-temp">--°C</td>
+                        <td class="kolkata-condition">--</td>
+                    </tr>
+                    <tr data-city="Tokyo">
+                        <td>Tokyo</td>
+                        <td class="tokyo-temp">--°C</td>
+                        <td class="tokyo-condition">--</td>
+                    </tr>
+                    <tr data-city="London">
+                        <td>London</td>
+                        <td class="london-temp">--°C</td>
+                        <td class="london-condition">--</td>
+                    </tr>
+                    <tr data-city="Dubai">
+                        <td>Dubai</td>
+                        <td class="dubai-temp">--°C</td>
+                        <td class="dubai-condition">--</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+</body>
+</html>

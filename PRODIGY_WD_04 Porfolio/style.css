@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+    position: relative; /* Ensure positioning for dropdown */
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sandwich-button {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.dropdown-menu {
+    display: flex;
+}
+
+@media (max-width: 1000px) {
+    .sandwich-button {
+        display: block;
+    }
+
+    .dropdown-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+        text-align: center;
+        position: absolute;
+        top: 100%; /* Positioning the dropdown below the header */
+        left: 0;
+        z-index: 0;
+    }
+
+    .dropdown-menu.active {
+        display: flex;
+    }
+
+    .dropdown-menu li {
+        display: block;
+        padding: 15px 0;
+        border-bottom: 1px solid #555;
+    }
+
+    .dropdown-menu li:last-child {
+        border-bottom: none;
+    }
+}
+
+#home {
+    padding: 50px 0;
+    text-align: center;
+    background: #77a9ff;
+    color: #fff;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.home-text {
+    margin-top: 20px;
+}
+
+.home-text h2 {
+    font-size: 2.5rem;
+}
+
+.home-text p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#about, #projects, #skills, #education, #contact {
+    padding: 50px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#projects .project {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    padding: 10px;
+    font-size: 1.1rem;
+    background: #fff;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+    background: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a {
+    color: #333;
+    font-size: 1.2rem;
+    margin: 0 15px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shihab Jagrala</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Shihab Jagrala</h1>
+                <p>Software Developer</p>
+                
+                <button class="sandwich-button">☰</button>
+                <nav>
+                    <ul class="dropdown-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <div class="home-content">
+                <img src="Shihab Photo.jpg" alt="Shihab Jagrala" class="profile-photo">
+                <div class="home-text">
+                    <h2>Welcome to My Portfolio</h2>
+                    <p>I am a dedicated Computer Engineering student with a passion for technology and a drive for
+                        excellence. I aim to apply my skills to real-world challenges and contribute effectively to
+                        innovative projects and teams.</p>
+                    <a href="Shihab Jagrala.pdf" class="btn" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>My name is Shihab Jagrala. I am currently pursuing a degree in Computer Engineering from Silver Oak
+                College Of Engineering & Technology. With a strong academic background and a CPI of 8.72, I am
+                continuously enhancing my skills and knowledge in the field of software development.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Internship & Experience</h2>
+            <div class="project">
+
+                <p>I have completed an online internship in web development at Prodigy Infotech, where I gained valuable
+                    experience and worked on minor projects in Android app development, data science, and machine
+                    learning.</p><br><br>
+                <p>Throughout my journey, I have developed a dynamic website named VirtualPet, which facilitates the
+                    buying and selling of pet companions and serves as a platform for donation services for needy
+                    animals.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>VirtualPet</h3>
+                <p>Developed a dynamic website, VirtualPet, facilitating the buying and selling of pet companions and
+                    serving as a platform for donation services for needy animals. Contributed to frontend and backend
+                    development using HTML, CSS, and JavaScript. Created user-friendly interfaces for browsing pets,
+                    facilitating transactions, and integrating donation features.</p>
+                <p><strong>Technologies used:</strong> HTML, CSS, JavaScript</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>GitHub</h2>
+            <div class="project">
+                <h3>My Projects</h3>
+                <p>Developed a dynamic website, VirtualPet, facilitating the buying and selling of pet companions and
+                    serving as a platform for donation services for needy animals. Contributed to frontend and backend
+                    development using HTML, CSS, and JavaScript. Created user-friendly interfaces for browsing pets,
+                    facilitating transactions, and integrating donation features.</p>
+                <h3>Internship Projects</h3>
+                <p>Developed a dynamic website, VirtualPet, facilitating the buying and selling of pet companions and
+                    serving as a platform for donation services for needy animals. Contributed to frontend and backend
+                    development using HTML, CSS, and JavaScript. Created user-friendly interfaces for browsing pets,
+                    facilitating transactions, and integrating donation features.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Java</li>
+                <li>C</li>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Tools: Visual Studio, IntelliJ Idea, MongoDB, GitHub</li>
+                <li>Soft skills: Teamwork, Creativity, Problem-solving, Receptive, Communication</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Silver Oak College Of Engineering & Technology</h3>
+                <p>Computer Engineering, 2022 - 2026</p>
+                <p>Current CPI: 8.72</p>
+            </div>
+            <div class="education-item">
+                <h3>Ascent School Of Science, Palanpur</h3>
+                <p>Higher Secondary, 2022</p>
+                <p>Boards: 56%</p>
+            </div>
+            <div class="education-item">
+                <h3>N.M Balwa High School, Chhapi</h3>
+                <p>Secondary, 2020</p>
+                <p>Boards: 70%</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:jagralashihab786@gmail.com">jagralashihab786@gmail.com</a></p>
+        <!-- direct call by clicking number-->
+         <p>Phone: <a href="tel:+917016408482">+91 7016408482</a></p>
+            <p>Address: 402-Muhib Apartments, near Meman hall, Juhapura, Ahmedabad 380055</p>
+            <div class="social-links">
+                <a href="https://github.com/JagralaCodes" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/jagralashihab" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shihab Jagrala. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.sandwich-button').addEventListener('click', function() {
+            document.querySelector('.dropdown-menu').classList.toggle('active');
+        });
+        
+    </script>
+    
+</body>
+
+</html>
